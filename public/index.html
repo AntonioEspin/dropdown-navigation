@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <style>
@@ -27,19 +30,30 @@
       </figure>
 
       <!-- Nav desktop section -->
-      <nav class="header__nav">
+      <nav class="header__nav inactive">
         <figure class="header__iconClose">
           <img src="../images/icon-close-menu.svg" alt="icon-close-menu">
         </figure>
         <ul class="header__nav--ul">
           <li>
             <span>Features</span>
-            <img src="../images/icon-arrow-down.svg" alt="icon-arrow-down">
+            <img class="arrow-down-features" src="../images/icon-arrow-down.svg" alt="icon-arrow-down">
           </li>
+          <ul class="features-list inactive">
+            <li><img src="../images/icon-todo.svg" alt="icon-todo">Todo List</li>
+            <li><img src="../images/icon-calendar.svg" alt="icon-calendar">Calendar</li>
+            <li><img src="../images/icon-reminders.svg" alt="icon-reminders">Reminders</li>
+            <li><img src="../images/icon-planning.svg" alt="icon-planning">Planning</li>
+          </ul>
           <li>
             <span>Company</span>
-            <img src="../images/icon-arrow-down.svg" alt="icon-arrow-down">
+            <img class="arrow-down-company" src="../images/icon-arrow-down.svg" alt="icon-arrow-down">
           </li>
+          <ul class="company-list inactive">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
           <li>
             <span>Careers</span>
           </li>
