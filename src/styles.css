@@ -25,6 +25,7 @@ main {
 
 /* header section (start) */
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +34,40 @@ main {
 }
 
 .header__nav {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+}
+
+.header__iconClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 80px;
+  align-self: flex-end;
+}
+
+.header__nav--ul {
+  list-style: none;
+  padding-left: 15px;
+  font-size: 1.8rem;
+  color: var(--medium-gray);
+}
+
+.header__nav--ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__nav--ul li span {
+  margin-right: 20px;
 }
 
   /* header section (end) */
