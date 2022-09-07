@@ -28,6 +28,7 @@ closeIcon.addEventListener('click', () => {
 // Evento para desplegar features-list
 arrowDownFeatures.addEventListener('click', () => {
   featuresList.classList.toggle('inactive')
+  companyList.classList.add('inactive')
   const getSrc = arrowDownFeatures.getAttribute('src')
   if  (getSrc == '../images/icon-arrow-down.svg') {
     arrowDownFeatures.setAttribute('src', '../images/icon-arrow-up.svg')
@@ -39,6 +40,7 @@ arrowDownFeatures.addEventListener('click', () => {
 // Evento para desplegar company-list
 arrowDownCompany.addEventListener('click', () => {
   companyList.classList.toggle('inactive')
+  featuresList.classList.add('inactive')
   const getSrc = arrowDownCompany.getAttribute('src')
   if  (getSrc == '../images/icon-arrow-down.svg') {
     arrowDownCompany.setAttribute('src', '../images/icon-arrow-up.svg')
